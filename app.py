@@ -13,7 +13,7 @@ st.set_page_config(page_title="AI Health Insights", page_icon="🩺", layout="ce
 st.title("🩺 AI Health Insights")
 st.markdown("Upload your blood report, X-ray or any medical document")
 
-uploaded_file = st.file_uploader("Choose PDF or Image", type= )
+uploaded_file = st.file_uploader("Choose PDF or Image", type=)
 
 if uploaded_file:
     with st.spinner("Analyzing your report..."):
