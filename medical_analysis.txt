@@ -1,0 +1,9 @@
+Analyze this medical report and explain in simple, easy-to-understand language.
+
+Tell me:
+- What looks normal
+- What looks concerning
+- Whether the person should visit a doctor
+- 2-3 simple suggestions
+
+Remember: You are not a doctor. Always say this is AI advice only.
