@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediScan - AI Health Analysis</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      color: white;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 3.8rem;
+      background: linear-gradient(to right, #00f5ff, #00ff9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline { font-size: 1.4rem; margin-top: 10px; opacity: 0.9; }
+
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 320px;
+      text-align: center;
+      transition: 0.4s;
+      border: 1px solid rgba(0,245,255,0.2);
+    }
+    .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 25px 50px rgba(0,245,255,0.3);
+    }
+    .card h2 { font-size: 1.8rem; margin-bottom: 10px; }
+    .price { font-size: 3rem; font-weight: bold; margin: 15px 0; }
+    .card button {
+      margin-top: 25px;
+      padding: 14px 40px;
+      background: #00f5ff;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+    .popular {
+      border: 2px solid #00ff9d;
+      position: relative;
+    }
+    .popular::after {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #00ff9d;
+      color: black;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MediScan</h1>
+      <p class="tagline">AI-Powered Medical Report Analysis</p>
+    </header>
+
+    <div class="pricing">
+      <!-- Basic Plan -->
+      <div class="card">
+        <h2>Basic</h2>
+        <div class="price">₹299</div>
+        <p>One Report Analysis<br>Blood Report + Summary</p>
+        <button onclick="alert('Basic Plan Selected')">Choose Basic</button>
+      </div>
+
+      <!-- Popular Plan -->
+      <div class="card popular">
+        <h2>Pro</h2>
+        <div class="price">₹799</div>
+        <p>3 Reports per month<br>X-Ray + Blood Report<br>Priority Analysis</p>
+        <button onclick="alert('Pro Plan Selected - Most Popular')">Choose Pro</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="card">
+        <h2>Premium</h2>
+        <div class="price">₹1499</div>
+        <p>Unlimited Reports<br>X-Ray + MRI + Blood<br>24/7 AI Chatbot</p>
+        <button onclick="alert('Premium Plan Selected')">Choose Premium</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
